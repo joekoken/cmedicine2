@@ -1,0 +1,178 @@
+<!--
+
+    <div class="navigation-bar">
+      <div class="navigation-bar__left">
+        <span class="toolbar-button--quiet navigation-bar__line-height">
+            <a href='#' onclick='backbtn()'><span class="toolbar-button--quiet navigation-bar__line-height">Cancel</span></a>
+        </span>
+      </div>
+    
+      <div class="navigation-bar__center">
+        新病人
+      </div>
+    
+      <div class="navigation-bar__right">
+        <button class="button" onclick="validationcheck();">建立</button>
+      </div>
+    </div>
+-->
+<div class="scrollable">
+    <div class="scrollable-content section" style='padding-bottom:150px;'>
+        
+<!--
+    <form action='' ng-submit="pcreate()">
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" ng-model='patient.name'>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" ng-model='patient.email'>
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Phone" aria-describedby="basic-addon1" ng-model='patient.phone'>
+        </div>
+        <br><br>
+        <button class="btn btn-primary btn-block" style='width:30%' type="submit" >
+            Create
+        </button>
+    </form>
+-->
+        
+    <form action="" id="" ng-submit="rcreate()" name="testForm" novalidate="">
+            <fieldset>
+                    <div bs-panel title="">
+                        <div class="form-group" ng-class="{ 'has-error': testForm.test2.$invalid }">
+                            <label>病人</label><br>
+<!--                            <div><input class="form-control" type='hidden' ng-model='person.selected.pid' value={{person.selected.pid}}></div>-->
+
+<!--
+                              <ui-select ng-model="person.selected" theme="select2" ng-disabled="disabled" style="min-width: 300px;">
+                                <ui-select-match placeholder="選擇病人">{{$select.selected.name}}</ui-select-match>
+                                <ui-select-choices repeat="person in patients | propsFilter: {name: $select.search, phone: $select.search}">
+                                  <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                  <small>
+                                    email: {{person.email}}<br>
+                                    phone: <span ng-bind-html="person.phone | highlight: $select.search"></span>
+                                  </small>
+                                </ui-select-choices>
+                              </ui-select>
+-->
+                              <ui-select name="test2" ng-model="person.selected" theme="select2" style="min-width: 300px;" is-required="true">
+                                <ui-select-match placeholder="選擇病人">{{$select.selected.name}}</ui-select-match>
+                                <ui-select-choices repeat="person in patients | filter: $select.search">
+                                  <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                  <small ng-bind-html="person.email | highlight: $select.search"></small>
+                                  <small ng-bind-html="person.phone | highlight: $select.search"></small>
+
+                                </ui-select-choices>
+                              </ui-select>
+                        </div>
+                        <div class="form-group">
+                          <label>主訴</label>
+                          <input type="text"
+                                 ng-model="record.main"
+                                 class="form-control"
+                                 placeholder="輸入主訴">
+                        </div>
+
+                        <div class="form-group">
+                          <label>現病史</label>
+                          <input type="email"
+                                 ng-model="record.current"
+                                 class="form-control"
+                                 placeholder="輸入現病史">
+                        </div>
+
+                        <div class="form-group">
+                          <label>病歷</label>
+                          <input type="text" 
+                                 class="form-control"
+                                 placeholder="輸入病歷"
+                                 ng-model="record.history"
+                                 >
+                        </div>
+                        <div class="form-group">
+                          <label>舌脈</label>
+                          <input type="text" 
+                                 class="form-control"
+                                 placeholder="輸入舌脈"
+                                 ng-model="record.tongue"
+                                 >
+                        </div>
+                        <div class="form-group">
+                          <label>檢查</label>
+                          <input type="text" 
+                                 class="form-control"
+                                 placeholder="輸入檢查"
+                                 ng-model="record.check"
+                                 >
+                        </div>
+                        <div class="form-group">
+                          <label>診斷</label>
+                          <input type="text" 
+                                 class="form-control"
+                                 placeholder="輸入診斷"
+                                 ng-model="record.result"
+                                 >
+                        </div>
+                        <div class="form-group">
+                          <label>處方</label>
+                          <input type="text" 
+                                 class="form-control"
+                                 placeholder="輸入處方"
+                                 ng-model="record.solution"
+                                 >
+                        </div>
+                        <div class="form-group">
+                            <label>日期</label>
+                            <div class="col-md-6">
+                                <p class="input-group">
+<!--                                  <input type='text'  value={{dt | date:'dd-MM-yyyy' }}>    -->
+                                        <pre>Selected date is: <em>{{dt | date:'dd-MM-yyyy' }}</em></pre>
+                                  <input type="text" class="form-control" datepicker-popup="dd-MM-yyyy" datepicker-mode='day' ng-click="record.date.open = true;" ng-model="record.date" is-open="record.date.open"  datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                  <span class="input-group-btn">
+<!--                                    <button type="button" class="btn btn-default" ng-click="clear()"><i class="glyphicon glyphicon-remove"></i></button>-->
+<!--                                    <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>-->
+                                  </span>
+                                </p>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <!--ng-disabled = "user.username==undefined||user.username=='' || user.password=='' || user.password==undefined"-->
+                        <div class="btn-group-sm">
+                            <button class="btn btn-primary" style='width:40%;' type="submit" >
+                              Create
+                            </button>
+                        
+                            <button class="btn btn-primary" style='width:40%;' ng-click="main()" >
+                              Cancel
+                            </button>
+
+                        </div>
+                    </div>
+            </fieldset>
+    </form>
+
+    </div>
+</div>
+    
+<!--
+    <ul class="list">
+      <li class="list__item">
+        <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="Name" id='pname'>
+      </li>
+      <li class="list__item">
+        <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="Email" id='pemail'>
+      </li>
+      <li class="list__item">
+        <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="Phone" id='pphone'>
+      </li>
+      
+    </ul>
+-->
+

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+
+    
+    <script  type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+
+
+    <link rel="stylesheet" href="components/loader.css">
+    <script  type="text/javascript" src="components/loader.js"></script>
+    <script  type="text/javascript" src="js/createpeople.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/Toast.js"></script>
+
+    <script>
+        
+        // alert(pid);
+        function dbConnect(){
+         var db = window.openDatabase("cmedicineDB", "1.0", "cmedicine", 200000); 
+            db.transaction(queryDB, errorCB);
+        
+        }
+        function queryDB(tx){
+            var pid=localStorage.getItem("pid");
+            // alert(pid);
+            tx.executeSql("SELECT * FROM Patient WHERE id='"+pid+"'",[],querySuccess,errorCB);
+        }
+        function errorCB(err) {
+         alert("Error processing SQL: "+err.code);
+        }
+    
+        function querySuccess(tx,result){
+            var row = result.rows.item(0);
+
+            // alert(row['name']);
+            document.getElementById('pname').value=row['name'];
+            document.getElementById('pemail').value=row['email'];
+            document.getElementById('pphone').value=row['phone'];
+            // console.log('here'); 
+        }
+        
+        function formsave(){
+            var db = window.openDatabase("cmedicineDB", "1.0", "cmedicine", 200000); 
+            db.transaction(updateDB, errorCB);
+        }
+        function updateDB(tx){
+            var name=document.getElementById('pname').value;
+            var email=document.getElementById('pemail').value;
+            var phone=document.getElementById('pphone').value;
+            var pid=localStorage.getItem("pid");
+        
+            tx.executeSql("UPDATE Patient SET name='"+name+"', email='"+email+"', phone='"+phone+"' WHERE id='"+pid+"'",[],Updatesucess,errorCB);
+        }
+        
+        
+        function Updatesucess(tx,result){
+            console.log('sucess');
+             window.location='viewpeople.html';
+        }
+        
+
+        function backbtn(){
+            window.location='viewpeople.html';
+        }
+        
+    </script>
+
+</head>
+<body onload="dbConnect();">
+    <div class="navigation-bar">
+      <div class="navigation-bar__left">
+        <span class="toolbar-button--quiet navigation-bar__line-height">
+            <a href='#' onclick='backbtn()'><span class="toolbar-button--quiet navigation-bar__line-height">返回</span></a>
+        </span>
+      </div>
+    
+      <div class="navigation-bar__center">
+        更改病人
+      </div>
+    
+      <div class="navigation-bar__right">
+        <button class="button" onclick="formsave();">儲存</button>
+      </div>
+    </div>
+    
+    <ul class="list">
+      <li class="list__item">
+        <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="Name" id='pname'>
+      </li>
+      <li class="list__item">
+        <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="Email" id='pemail'>
+      </li>
+      <li class="list__item">
+        <input type="text" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="Phone" id='pphone'>
+      </li>
+      
+    </ul>
+    
+
+    
+<script type="text/javascript">
+     function validationcheck(){
+     
+//      if (document.mylogin.username.value == "") {
+//       alert("Please Enter Username.");
+//       document.mylogin.username.focus(); 
+//      } else if (document.mylogin.psw.value == "") {
+//       alert("Please Enter Password.");
+//       document.mylogin.psw.focus();
+//      }
+//      else
+//       {
+         success();
+//       }
+     }
+      
+     // function success(){
+     //  onDeviceReady();
+     // }
+</script>
+    <!--<script>        jQuery.noConflict();</script>-->
+    <!--<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />-->
+    <!--<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>-->
+</body>
+</html>
+
+

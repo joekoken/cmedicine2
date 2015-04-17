@@ -1,0 +1,74 @@
+<div class="scrollable">
+    <div class="scrollable-content section">
+        
+<!--        <div  class="pull-left">-->
+                <h2>Patient</h2>
+                
+<!--
+                <button type="button" class="btn btn-primary pull-right" ng-click='createpeople()'>
+                Save
+                </button>
+-->
+<!--    </div>-->
+        
+        <form action="" id="" ng-submit="psave()">
+            <fieldset>
+                    <div bs-panel title="">
+                        <div class="form-group has-success has-feedback">
+                          <label>Name</label>
+                          <input type="text"
+                                 ng-model="patient.name"
+                                 class="form-control"
+                                 placeholder="Enter Name">
+                        </div>
+
+                        <div class="form-group has-success has-feedback">
+                          <label>Email</label>
+                          <input type="email"
+                                 ng-model="patient.email"
+                                 class="form-control"
+                                 placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group">
+                          <label>Phone</label>
+                          <input type="text" 
+                                 class="form-control"
+                                 placeholder="Enter Phone"
+                                 ng-model="patient.phone"
+                                 >
+                        </div>
+                        
+                        <div class="form-group">
+                          <label>Sex</label><br>
+                            <input type="radio" name="sex" value="male" ng-model="patient.sex">Male
+                            <input type="radio" name="sex" value="female" ng-model="patient.sex">Female
+                        </div>
+                        
+                        <div class="form-group">
+                          <label>Age</label>
+                          <input type="number" 
+                                 class="form-control"
+                                 placeholder="Enter Age"
+                                 ng-model="patient.age"
+                                 >
+                        </div>
+                        <!--ng-disabled = "user.username==undefined||user.username=='' || user.password=='' || user.password==undefined"-->
+                        <div class="btn-group-sm">
+                            <button class="btn btn-primary" style='width:40%;' type="submit" >
+                              Create
+                            </button>
+                        
+                            <button class="btn btn-primary" style='width:40%;' ng-click="viewpeople()" >
+                              Cancel
+                            </button>
+
+                        </div>
+                    </div>
+            </fieldset>
+        </form>
+       
+<!--        <div class="list-group" id='MyPatientList'></div>-->
+        <div data-ng-init="editpeopleload()"></div>
+    </div>
+</div>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script  type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script  type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <!--<link rel="stylesheet" href="components/loader.css">-->
+    <!--<script  type="text/javascript" src="components/loader.js"></script>-->
+<!--    <script  type="text/javascript" src="js/createpeople.js"></script>-->
+        <link rel="stylesheet" href="css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+   
+    
+    <script>
+        document.addEventListener("deviceready", onDeviceReady, true); 
+        function onDeviceReady() {
+            dbConnect();
+        }
+        function dbConnect(){
+         var db = window.openDatabase("cmedicineDB", "1.0", "cmedicine", 200000); 
+            db.transaction(populateDB, errorCB);
+        
+        }
+         //select all from Patient
+        function queryDB(tx){
+            tx.executeSql('SELECT * FROM Patient',[],querySuccess,errorCB);
+        }
+    
+        function populateDB(tx) {
+        // tx.executeSql('DROP TABLE IF EXISTS Patient');   
+        tx.executeSql('CREATE TABLE IF NOT EXISTS Patient (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name VARCHAR(50),phone INTEGER,email VARCHAR(50))');
+        var db = window.openDatabase("cmedicineDB", "1.0", "cmedicine", 200000); 
+        db.transaction(queryDB, errorCB);
+         // var name = document.getElementById("pname").value;
+         // var phone = document.getElementById("pphone").value;
+         // var email = document.getElementById("pemail").value;
+         // tx.executeSql("INSERT INTO Patient (name,phone,email) VALUES ('"+ name +"','"+ phone +"' , '"+ email+"')");
+          
+        }
+        // 
+        // function check(tx,result){
+        //     alert (result.rows.length);
+        // }
+      
+        function querySuccess(tx,result){
+            if(result.rows.length>0){
+                
+            
+                $('#MyPatientList').empty();
+                // console.log('there');
+                var len=result.rows.length;
+                for (var i=0; i<len; i++){
+                    var row = result.rows.item(i);
+                    $('#MyPatientList').append('<li class="list__item list__item--chevron"><a href="editpeople.html" id="'+row['id']+'"><h3 class="ui-li-heading">'+row['name']+'</h3><div class="ui-li-desc">'+row['phone']+'<br>'+row['email']+'</div></a></li>');
+                };
+          
+                $('#MyPatientList').listview();
+                // console.log('there');
+            }
+            else{
+                // console.log('here');
+            }
+        }
+        function errorCB(err) {
+        alert("Error processing SQL: "+err.code);
+        }
+        
+        function backbtn(){
+            window.location='index.html';
+        }
+        
+        function createpeoplebtn(){
+            window.location='createpeople.html';
+        }
+        
+        
+        $(document).on("click","#MyPatientList li a",function(event){
+           window.location=$(this).attr("href");
+           var patientid=$(this).attr("id");
+           localStorage.setItem("pid",patientid);
+        });
+    </script>
+</head>
+<body>
+    <div class="navigation-bar">
+      <div class="navigation-bar__left">
+        <span class="toolbar-button--quiet navigation-bar__line-height">
+        <a href='#' onclick='backbtn()'><span class="toolbar-button--quiet navigation-bar__line-height">Back</span></a>        
+          <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>
+        </span>
+      </div>
+    
+      <div class="navigation-bar__center">
+        現有病人
+      </div>
+    
+      <div class="navigation-bar__right">
+          <a href='#' onclick='createpeoplebtn()'><button class="button">建立</button></a>
+      </div>
+    </div>
+
+     <div data-role="content">
+        <ul class="list list--inset" id="MyPatientList">
+
+        </ul>
+
+
+    </div>
+    
+    
+    
+        <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

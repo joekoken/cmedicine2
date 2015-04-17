@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb52a87d-8c92-48ad-918f-9e716b94abee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/.pgbomit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/add197.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/bada/icon-128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/tizen/icon-128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/windows-phone/icon-173-tile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/android/icon-36-ldpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/android/icon-48-mdpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/bada-wac/icon-48-type5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/windows-phone/icon-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/bada-wac/icon-50-type3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/ios/icon-57-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/ios/icon-57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/windows-phone/icon-62-tile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/webos/icon-64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/ios/icon-72-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/android/icon-72-hdpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/ios/icon-72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/bada-wac/icon-80-type4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/blackberry/icon-80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/icon/android/icon-96-xhdpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/magnifyingglass6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/blackberry/screen-225.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/webos/screen-64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-hdpi-landscape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-hdpi-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-ipad-landscape-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-ipad-landscape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-ipad-portrait-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-ipad-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-iphone-landscape-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-iphone-landscape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-iphone-portrait-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-iphone-portrait-568h-2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/ios/screen-iphone-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-ldpi-landscape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-ldpi-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-mdpi-landscape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-mdpi-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/windows-phone/screen-portrait.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/bada/screen-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/bada-wac/screen-type3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/bada-wac/screen-type4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/bada-wac/screen-type5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-xhdpi-landscape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/android/screen-xhdpi-portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/screenshots/screenshot-android-toast.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/screenshots/screenshot-ios-toast.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/screenshots/screenshot-wp8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/silhouette78.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/.fetch.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/MIT.LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/res/screen/tizen/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast+UIView.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast+UIView.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/wp8/Toast.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/android/nl/xservices/plugins/Toast.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/www/Toast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/src/ios/Toast.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmedicine.xdk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmedicine.xdke" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.cordova/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/createpeople.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/createpeople.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/editpeople.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec/helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/jasmine-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/jasmine.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/jasmine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/jquery-1.11.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/jquery.mobile-1.4.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/spec.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/nl.x-services.plugins.toast/test/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/viewpeople.html" />
+    </list>
+    <ignored path="cmedicine2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cmedicine2" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="413" />
+    <option name="y" value="38" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="AndroidView" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb52a87d-8c92-48ad-918f-9e716b94abee" name="Default" comment="" />
+      <created>1423150021494</created>
+      <updated>1423150021494</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="413" y="38" width="1400" height="1000" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19850746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+</project>
+
