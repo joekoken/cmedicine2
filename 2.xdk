@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "",
       "projectGuid": "ed183699-8a5d-42a1-9f12-50ee6efa8506",
-      "lastModifiedDate": 1429169222580,
+      "lastModifiedDate": 1434705638117,
       "creationDate": 1424451664402
     },
     "sourceDirectory": "www",
@@ -144,7 +144,7 @@
         "runtime_": "W3C",
         "name_": "WebApp",
         "preferences_": {},
-        "isActive_": false,
+        "isActive_": true,
         "appName_": "2",
         "appID_": "not.yet.specified",
         "appAccess_": [

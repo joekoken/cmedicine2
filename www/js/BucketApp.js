@@ -32,6 +32,15 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/createrecord',{
         templateUrl:'createrecord.html'
     });
+    
+    $routeProvider.when('/viewrecord', {
+        templateUrl:'viewrecord.html'
+    });
+    
+    $routeProvider.when('/viewrecord_all',{
+        templateUrl:'viewrecord_all.html'
+    });
+    
 //    ngToastProvider.configure({
 //      verticalPosition: 'bottom',
 //      horizontalPosition: 'center',
@@ -46,7 +55,7 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
  
         // Init Firebase
         var ref = new Firebase("https://radiant-heat-7078.firebaseio.com/");
-        var auth = $firebaseSimpleLogin(ref);
+//        var auth = $firebaseSimpleLogin(ref);
  
 //         Initialized the user object
         $scope.user = {
@@ -58,33 +67,64 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
           $location.path("/main");  
         };
  
+        
+        // Handle Email/Password login
         // Sign In auth function
         $scope.signin = function() {
-//            var email = $scope.user.username;
-//            var password = $scope.user.password;
-            var email = "joekoken@hotmail.com";
-            var password = "12345678";
-            if (email && password) {
-                    // Sign In Logic
-                    auth.$login('password', {
-                            email: email,
-                            password: password
-                        })
-                        .then(function(user) {
-                            // On success callback
-                            console.log('Username and password found');
-                            $scope.userEmailId = user.email;
-                            $scope.userid=user.uid;
-//                            console.log($scope.userid);
-                            $scope.loggedIn = true;
-                            $location.path('/main');
-                            
-                        }, function(error) {
-                            // On failure callback
-                            console.log('Username and password not found');
-                        });
-            }
+            
+            ref.authWithPassword({
+              "email": "joekoken@hotmail.com",
+              "password": "12345678"
+            }, function onAuth(error, authData) {
+              if (error) {
+//                $location.path('/viewpeople');
+                console.log("Login Failed!", error);
+              } else {
+//                
+                console.log("Authenticated successfully with payload");
+                
+                console.log("here");
+                $scope.userEmailId = authData.email;
+                  
+                $scope.userid=authData.uid;
+                localStorage.login=authData.uid;  
+                $scope.loggedIn = true;
+                $location.path('/main');
+              }
+            });
+            
+            return false;
         };
+        
+//        // Sign In auth function
+//        $scope.signin = function() {
+////            var email = $scope.user.username;
+////            var password = $scope.user.password;
+//            var email = "joekoken@hotmail.com";
+//            var password = "12345678";
+//            if (email && password) {
+//                    // Sign In Logic
+//                    auth.$login('password', {
+//                            email: email,
+//                            password: password
+//                        })
+//                        .then(function(user) {
+//                            // On success callback
+//                            console.log('Username and password found');
+//                            $scope.userEmailId = user.email;
+//                            $scope.userid=user.uid;
+////                            console.log($scope.userid);
+//                            $scope.loggedIn = true;
+//                            $location.path('/main');
+//                            
+//                        }, function(error) {
+//                            // On failure callback
+//                            console.log('Username and password not found');
+//                        });
+//            }
+//        };
+        
+        
         
         $scope.patient={
             name:"",
@@ -101,7 +141,7 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
             var pphone=$scope.patient.phone;
             var psex=$scope.patient.sex;
             var page=$scope.patient.age;
-            var patientRef=ref.child($scope.userid+"/patient");
+            var patientRef=ref.child(localStorage.login+"/patient");
             if(pname!==''){
                 patientRef.push({
                     name:pname,
@@ -131,7 +171,7 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
         
 
         $scope.viewpeopleload=function(){
-            var patientRef=ref.child($scope.userid+"/patient");
+            var patientRef=ref.child(localStorage.login+"/patient");
             patientRef.on("value",function(snapshot){
 //                console.log(patient);
                 var i=0;
@@ -159,12 +199,14 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
         $scope.editpeopleload=function(){
             var pid=localStorage.getItem("pid");
 //            console.log(pid);
-            var patientRef=ref.child($scope.userid+"/patient/"+pid);
+            var patientRef=ref.child(localStorage.login+"/patient/"+pid);
             patientRef.on("value",function(snapshot){
                 $scope.patient={
                     name:snapshot.child("name").val(),
                     phone:snapshot.child("phone").val(),
-                    email:snapshot.child("email").val()
+                    email:snapshot.child("email").val(),
+                    sex:snapshot.child("sex").val(),
+                    age:snapshot.child("age").val()
                 };
             });
             
@@ -196,7 +238,7 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
             var psex=$scope.patient.sex;
             var page=$scope.patient.age;
             var pid=localStorage.getItem("pid");
-            var patientRef=ref.child($scope.userid+"/patient/"+pid);
+            var patientRef=ref.child(localStorage.login+"/patient/"+pid);
             if(pname!==''){
                 patientRef.update({
                     name:pname,
@@ -224,7 +266,7 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
         
         $scope.deletepeople=function(){
             var pid=localStorage.getItem("pid");
-            var patientRef=ref.child($scope.userid+"/patient/"+pid);
+            var patientRef=ref.child(localStorage.login+"/patient/"+pid);
             patientRef.remove();
             $location.path('/viewpeople');
             
@@ -243,7 +285,7 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
             };
 
             
-            var patientRef=ref.child($scope.userid+"/patient");
+            var patientRef=ref.child(localStorage.login+"/patient");
             $scope.patients=[];
             $scope.person = {};
             patientRef.on("value",function(snapshot){
@@ -284,18 +326,19 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
 //            console.log(test2);
             var rdate=$scope.record.date.toString();
             
-          if($scope.testForm.$valid){
-            console.log("success");
-          }else{
-            console.log("validation error");
-            $scope.submitted = true;
-          }
-//            if(!$scope.person.selected.pid){
-//                toastr.alert("Please select patient", "",{timeOut:2000,positionClass:'toast-bottom-full-width'});
-//            }
-//            else{
+//          if($scope.testForm.$valid){
+//            console.log("success");
+//          }else{
+//            console.log("validation error");
+//            $scope.submitted = true;
+//          }
+            if(!$scope.person.selected){
+//                toastr.options.preventDuplicates = true;
+                toastr.error("Please select patient","",{timeOut:2000, positionClass:'toast-bottom-full-width', preventDuplicates: 'true'});
+            }
+            else{
                 var pid=$scope.person.selected.pid;
-                var recordRef=ref.child($scope.userid+"/patient/"+pid+"/record/");
+                var recordRef=ref.child(localStorage.login+"/patient/"+pid+"/record/");
 //                console.log(pid);
 
     //            if(pname!==''){
@@ -322,10 +365,40 @@ app.controller('MainController', ['$scope','$firebaseSimpleLogin','$location', "
                     toastr.success("Record Save","",{timeOut:2000, positionClass:'toast-bottom-full-width'});
                     $location.path('/main');
 //            }
-//            }
+            }
         };
         
         $scope.format=['dd-MM-yyyy'];
+        
+        
+        $scope.viewrecord =function(){
+            $location.path('/viewrecord');
+        };
+        $scope.viewrecord_all =function(){
+            $location.path('/viewrecord_all');
+        };
+        
+        $scope.viewrecord_allload=function(){
+            var patientRef=ref.child(localStorage.login+"/patient");
+            $scope.patients=[];
+            $scope.person = {};
+            patientRef.on("value",function(snapshot){
+
+                snapshot.forEach(function(data){
+                     console.log(data.key());
+                    $scope.patients.push(                        
+                        {
+                           
+                            pid:data.key(),
+                            name:data.child("name").val(),
+                            phone:data.child("phone").val(),
+                            email:data.child("email").val()
+                        }
+                    );
+                });
+                console.log($scope.patients);
+            });
+        };
 
     }
                                   

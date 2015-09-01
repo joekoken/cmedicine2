@@ -63,15 +63,37 @@
     </head>
     <body ng-app="AngularUIBucketApp">-->
         <!--<div class="app">-->
-<div class="scrollable">
+<!--<div class="scrollable">
     <div class="scrollable-content section">
  
                     <a  ng-click='viewpeople()'><img src='img/silhouette78.png' width=150 height=150></a><br>
                     <a  ng-click='createrecord()'><img src='img/add197.png' width=150 height=150></a><br>
-                    <a  onclick='searchbtn()'><img src='img/magnifyingglass6.png' width=150 height=150></a>
+                    <a  ng-click='viewrecord()'><img src='img/magnifyingglass6.png' width=150 height=150></a>
+
+    </div>
+</div>-->
+
+<div class="scrollable">
+    <div class="scrollable-content section">
+        <div class="row">
+            <div class="col-xs-6"><a  ng-click='viewpeople()'><img src='img/silhouette78.png' width=150 height=150></a></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <a  ng-click='createrecord()'><img src='img/add197.png' width=150 height=150></a><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <a  ng-click='viewrecord()'><img src='img/magnifyingglass6.png' width=150 height=150></a>
+            </div>
+        </div>
 
     </div>
 </div>
+
         <!--</div>-->
 <!--        <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

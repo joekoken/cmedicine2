@@ -4,6 +4,7 @@
     "initialAutoPluginCount": 0,
     "projectFiles": {},
     "projectDirectories": {},
-    "currentBuildConfiguration": "Android"
+    "currentBuildConfiguration": "Android",
+    "currentService": {}
   }
 }
